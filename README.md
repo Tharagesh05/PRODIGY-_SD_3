@@ -1,20 +1,3 @@
-To develop a program that allows users to store and manage contact information, you can use a programming language like Python. Here's a basic outline of how you can structure the program:
-
-1. **Data Structure**: Use a list of dictionaries to store contact information. Each dictionary will represent a contact with keys like "name," "phone number," and "email."
-
-2. **Functions**:
-   - `add_contact()`: Add a new contact by entering their name, phone number, and email address.
-   - `view_contacts()`: Display the list of all contacts.
-   - `edit_contact()`: Modify the details of an existing contact.
-   - `delete_contact()`: Remove a contact from the list.
-   - `save_contacts()`: Save the contact list to a file for persistent storage.
-   - `load_contacts()`: Load the contact list from a file.
-
-3. **Persistent Storage**: Use a file (e.g., JSON) to store contact information. This allows the data to persist between sessions.
-
-Here is a simple implementation in Python:
-
-```python
 import json
 
 # File to store contacts
@@ -88,11 +71,5 @@ def main():
 
 if __name__ == "__main__":
     main()
-```
 
-This program:
-- Uses a list of dictionaries to store contacts.
-- Provides functions to add, view, edit, and delete contacts.
-- Uses JSON for file storage to maintain contact information persistently.
 
-You can run this program, and it will prompt you for the necessary actions to manage the contacts.
